@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-hcaldwell95-boutiqueado-03r9z1jky0x.ws.codeinstitute-ide.net']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-hcaldwell95-boutiqueado-03r9z1jky0x.ws.codeinstitute-ide.net',
+]
+
 
 # Application definition
 
@@ -43,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
